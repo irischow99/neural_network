@@ -8,7 +8,7 @@ training_data, validation_data, test_data = mnist_loader.load_data_wrapper()
 import iris_neural_net
 net = iris_neural_net.Network([784, 30, 10])
 
-#net.stochastic_gradient_descent(30, 3.0, 10, training_data, test_set=test_data)
+net.stochastic_gradient_descent(30, 3.0, 10, training_data, test_set=test_data)
 
 def load_images(image_dir):
 	arr = []
